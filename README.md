@@ -10,12 +10,16 @@ The goal of this package is to help professionals working in the field of streng
 
 # Installation
 
-**Install from CRAN**
+**Install from CRAN**  
+```
 *matuR is not yet available on CRAN
+```
 
-**Install the development version from GitHub**
+**Install the development version from GitHub**  
+```
 install.packages("devtools")
 devtools::install_github("josedv82/matuR")
+```
 
 ### References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
