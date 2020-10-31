@@ -10,7 +10,7 @@ Accounting for maturation stages in young athletes is paramount for talent ident
   
 It is beyond the scope of this package to discuss the different methods available for the assessment of maturation in young athletes. The goal of this repository is to present **matuR**, a package that provide a simple framework for professionals working with young athletes to calculate common maturation metrics and quick visual reports to help facilitate interpretation of the results.
 
-The main functions implemented in this package rely heavility on the *Khamis-Roche* method for prediction of adult height, as well as the work from *Mirwald et al,* and *Cumming et al*, to extrapolate maturity offset and maturation stages from raw data. For further details about this methodology, please see the reference section at the bottom of this page.
+The functions implemented in this package rely on the *Khamis-Roche* method for prediction of adult height, as well as the work from *Mirwald et al,* and *Cumming et al*, to extrapolate maturity offset and maturation stages from raw data. For further details about this methodology, please see the reference section at the bottom of this page.
 
 # Installation
 
