@@ -14,14 +14,14 @@ The main functions implemented in this package rely heavility on the *Khamis-Roc
 
 # Installation
 
-**Install from CRAN**  
+Install from CRAN**  
 ```
 matuR has not been submitted to CRAN yet. Please use the development version.
 ```
   
     
     
-**Install the development version from GitHub**  
+Install the development version from GitHub**  
 ```
 install.packages("devtools")
 devtools::install_github("josedv82/matuR")
