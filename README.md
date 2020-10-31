@@ -16,7 +16,7 @@ The main functions implemented in this package rely heavility on the *Khamis-Roc
 
 **Install from CRAN**  
 ```
-*matuR is not yet available on CRAN
+matuR has not been submitted to CRAN yet. Please use the development version.
 ```
 
 **Install the development version from GitHub**  
