@@ -8,7 +8,9 @@ Athlete Maturation and Biobanding
 # Intro
 Identifying maturation stages across young athletes is paramount for talent identification. The concept of biobanding, or grouping of athletes based on their biological development, instead of their chronological age, has also been widely researched.   
   
-The goal of this package is to help professionals working in the field of strength & conditioning and talent ID obtain common maturation metrics and as well as to quickly visualize this information via several plotting options.  
+It is beyond the scope of this repository to discuss the different methods available for the assessment of maturation in young athletes. Our goal is to **matuR** to provide a simple framework for professionals working with young athletes to calculate common maturation metrics and quick visual reports to facilitate interpretation of the results.
+
+For more details about the methodology behind some of the metrics provided in **matuR** please see the `reference` section at the bottom of this page.
 
 # Installation
 
