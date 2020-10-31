@@ -25,6 +25,8 @@ install.packages("devtools")
 devtools::install_github("josedv82/matuR")
 ```
 
+# Usage
+
 ### References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
 
