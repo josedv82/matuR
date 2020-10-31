@@ -10,7 +10,7 @@ Accounting for maturation stages in young athletes is paramount for talent ident
   
 It is beyond the scope of this package to discuss the different methods available for the assessment of maturation in young athletes. The goal of this repository is to present **matuR**, a package that provide a simple framework for professionals working with young athletes to calculate common maturation metrics and quick visual reports to help facilitate interpretation of the results.
 
-The are two methods implemented for the assessment of maturation. The *Khamis-Roche* and the *maturity offset* methods. For further details about this methodology, please see the reference section at the bottom of this page.
+The two methods implemented in **matuR** for the assessment of maturation are the 1) *Khamis-Roche* and 2) *maturity offset* methods. For further details about this methodology, please see the reference section at the bottom of this page.
 
 # Installation
 
