@@ -1,4 +1,4 @@
 # matuR
 Athlete Maturation and Biobanding
 
-shorts <img src="man/mature/logo.png" align="right" width="200" />
+matuR <img src="man/matur_logo.PNG" align="right" width="200" />
