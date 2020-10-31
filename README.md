@@ -1,4 +1,4 @@
-### matuR
+# matuR
 Athlete Maturation and Biobanding
 
 **This page is currently Under Development**
@@ -6,11 +6,11 @@ Athlete Maturation and Biobanding
 <img src="man/matur_logo.PNG" align="right" width="200" />
 
 # Intro
-Identifying maturation stages across young athletes is paramount for talent identification. The concept of biobanding, or grouping of athletes based on their biological development, instead of their chronological age, has also been widely researched to better compare physical attributes across young athletes as well as adjust the competition demands athletes are exposed to. 
+Accounting for maturation stages in young athletes is paramount for talent identification. The concept of biobanding, or grouping of athletes based on their biological development as opposed to their chronological age, has also been widely researched to enable comparison of physical attributes across young athletes as well as better adjustment of the competition demands athletes are exposed to. 
   
-It is beyond the scope of this repository to discuss the different methods available for the assessment of maturation in young athletes. Our goal is to **matuR** to provide a simple framework for professionals working with young athletes to calculate common maturation metrics and quick visual reports to facilitate interpretation of the results.
+It is beyond the scope of this package to discuss the different methods available for the assessment of maturation in young athletes. The goal of this repository is to present **matuR**, a package that provide a simple framework for professionals working with young athletes to calculate common maturation metrics and quick visual reports to help facilitate interpretation of the results.
 
-For more details about the methodology behind some of the metrics provided in **matuR** please see the `reference` section at the bottom of this page.
+The main functions implemented in this package rely heavility on the *Khamis-Roche* method for prediction of adult height, as well as the work from *Mirwald et al,* and *Cumming et al*, to extrapolate maturity ofsset and maturation stages from raw data. For further details, please see the reference section at the bottom of this page.
 
 # Installation
 
