@@ -1,0 +1,18 @@
+Package: matuR
+Title: Athlete Maturation and Biobanding
+Version: 0.0.0.9000
+Authors@R: person(given = "Jose", family = "Fernandez", role = c("aut", "cre"), email = "jose.farnandezdv@gmail.com")
+Description: Identifying maturation stages across young athletes is paramount for talent identification. Furthermore, the concept of biobanding, or grouping of athletes based on their biological development, instead of their chronological age, has been widely researched. The goal of this package is to help professionals working in the field of strength & conditioning and talent ID obtain common maturation metrics and as well as to quickly visualize this information via several plotting options. Please visit the help section for each function in this package for more details about the methods behind the computed maturation metrics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    ggplot2,
+    lubridate,
+    tidyr,
+    magrittr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
