@@ -17,7 +17,7 @@ The goal of this repository is to showcase **{matuR}**, a package that provides 
 * sitting height (cms)  
 * weight (kgs)  
   
-**Predicted Adult Height (PAH):** This method is based on the Khamis-Roche method and it used the following parameters:  
+**Predicted Adult Height (PAH):** This is based on the Khamis-Roche method and uses the following parameters:  
 
 * age
 * gender
