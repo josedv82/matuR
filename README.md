@@ -70,11 +70,9 @@ The main functions within the package are `maturation_cm()` and `maturation_in()
 library(matuR)
 
 maturation_cm(data_sample)
-
-maturation_in(data_sample)
-
 ```
 
+<img src="man/images/maturation_cm.PNG" width="600" />
 
 
 # References
