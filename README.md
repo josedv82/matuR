@@ -3,7 +3,7 @@ Athlete Maturation and Biobanding
 
 **This page is currently Under Development**
 
-<img src="man/matur_logo.PNG" align="right" width="300" />
+<img src="man/images/matur_logo.PNG" align="right" width="300" />
 
 # Intro
 Accounting for maturation stages in young athletes is paramount for talent identification. The concept of biobanding, or grouping of athletes based on their biological development as opposed to their chronological age, has also been widely researched to enable comparison of physical attributes across young athletes as well as better adjustment of the training and competition demands athletes are exposed to. 
