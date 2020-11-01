@@ -38,8 +38,6 @@ Install from CRAN**
 matuR has not been submitted to CRAN yet. Please use the development version.
 ```
   
-    
-    
 Install the development version from GitHub**  
 ```
 install.packages("devtools")
@@ -66,7 +64,20 @@ data_sample
 
 # Usage
 
-### References
+The main functions within the package are `maturation_cm()` and `maturation_in()`. Both functions perform the same calculations and return the same data. Users can choose one or the other one depending on the units they wish to explore the results. The function takes the raw data from the template and performs the Khamis-Roche and Mirwarld calculations.
+
+```
+library(matuR)
+
+maturation_cm(data_sample)
+
+maturation_in(data_sample)
+
+```
+
+
+
+# References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
 
 * Khamis, H. J., & Roche, A. F, 1994. Predicting adult height without using skeletal age: The Khamis-Roche method. Pediatrics, 94, 504–507 [Link](https://pubmed.ncbi.nlm.nih.gov/7936860/)  
