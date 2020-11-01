@@ -1,14 +1,12 @@
-# matuR
+# {matuR}
 Athlete Maturation and Biobanding
-
-**This page is currently Under Development**
 
 <img src="man/images/matur_logo.PNG" align="right" width="300" />
 
 # Intro
-Accounting for maturation stages in young athletes is paramount for talent identification. The concept of biobanding, or grouping of athletes based on their biological development as opposed to their chronological age, has also been widely researched to enable comparison of physical attributes across young athletes as well as better adjustment of the training and competition demands athletes are exposed to. 
+Accounting for maturation stages in young athletes is paramount for talent identification. The concept of [biobanding,](https://www.collinsdictionary.com/es/diccionario/ingles/biobanding) or grouping of athletes based on their biological development as opposed to their chronological age, has also been widely researched to enable comparison of physical attributes across young athletes as well as better adjustment of the training and competition demands athletes are exposed to. 
   
-The goal of this repository is to showcase **matuR**, a package that provides a simple framework for professionals working with young athletes to calculate and visualize common maturation metrics using not invasive methods. The two methods implemented are:
+The goal of this repository is to showcase **{matuR}**, a package that provides a simple framework for professionals working with young athletes to calculate and visualize common maturation metrics using not invasive methods. The two methods implemented are:
 
 **Prediction of age at Peak Height Velocity (PHV):** This method is based on research from Mirlwald et al and uses the following parameters:
 
@@ -35,7 +33,7 @@ For further details about these two methods, their protocols and calculations se
 
 Install from CRAN**  
 ```
-matuR has not been submitted to CRAN yet. Please use the development version.
+{matuR} has not been submitted to CRAN yet. Please use the development version.
 ```
   
 Install the development version from GitHub**  
@@ -48,13 +46,15 @@ devtools::install_github("josedv82/matuR")
 
 ### User Data
 
-Use this template for data collection. Ensure that all fields have information. **matuR** runs both (age @ PHV and Khamis-Roche) methods together on the same dataset.
+Use this template for data collection. Ensure that all fields have information. Some fields require a double measurement to calculate the average.
+
+**{matuR}** runs both (age @ PHV and Khamis-Roche) methods together on the same dataset.
 
 [Data Template](https://github.com/josedv82/matuR/blob/master/man/images/template.xlsx)
 
 ### Demo Data
 
-**matuR** provides a demo data sample for users to familiarize with the package. 
+**{matuR}** provides a demo data sample for users to familiarize with the package. 
 
 ```
 library(matuR)
@@ -78,39 +78,50 @@ maturation_cm(data_sample)
 
 ### Plots
 
-**matuR** provides a few plotting options:
+**{matuR}** provides a few plotting options:
 
 Predicted Adult Height Plot (note the two options depending on cms or inches)
 
 ```
 plot_predicted_height_cm(data_sample)
 plot_predicted_height_in(data_sample)
-
 ```
+<img src="man/images/estimated_adult_height.png" width="600" />
 
 Time to PHV Dumbell Plot
 
 ```
 plot_time_phv(data_sample)
 ```
+<img src="man/images/time_to_phv.png" width="600" />
 
 Maturity Offset Plot
 
 ```
 plot_maturity_offset(data_sample)
 ```
+<img src="man/images/maturity_offset.png" width="600" />
 
 Plot the current and predicted height for one athlete against normal growth curves. The same function is available for females.
 ```
 plot_growth_male(data_sample, "Athlete 08")
 plot_growth_female(data_sample, "Athlete 18")
 ```
+<img src="man/images/plot_growth.png" width="600" />
 
 Plot % of Adult Height highlighted by Maturity Stages
 
 ```
 plot_puberty_stages(data_sample)
 ```
+<img src="man/images/puberty_stages.png" width="600" />
+
+# Considerations
+
+It is beyond the scope of this package to discuss some of pros and cons of using these methods. However, users should be aware of aspects regarding validity and reliability to better interpret results. Likewise, these methods have been validated in very specific populations, therefore professionals evaluating athletes from different countries and etnithities should be cautious when interpreting results. 
+
+Finally, please ensure accuracy of the athlete's height, weight, sitting height and their parent's height for better results. 
+
 
 # References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
