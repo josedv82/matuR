@@ -64,7 +64,7 @@ data_sample
 
 # Usage
 
-The main functions within the package are `maturation_cm()` and `maturation_in()`. Both functions perform the same calculations and return the same data. Users can choose one or the other one depending on the units they wish to explore the results. The function takes the raw data from the template and performs the Khamis-Roche and Mirwarld calculations.
+The two main functions within the package are *`maturation_cm()`* and *`maturation_in()`*. Both functions perform the same calculations and return the same data. Users can choose one or the other one depending on which units they wish to explore the results. The function takes the raw data from the template and performs the Khamis-Roche and Mirwarld calculations returning a dataframe that users can manipulate for further analysis.
 
 ```
 library(matuR)
