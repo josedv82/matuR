@@ -72,7 +72,7 @@ library(matuR)
 maturation_cm(data_sample)
 ```
 
-<img src="man/images/maturation_cm.PNG" width="600" />
+<img src="man/images/maturation_cm.PNG" width="800" />
 
 
 # References
