@@ -118,7 +118,7 @@ plot_puberty_stages(data_sample)
 
 # Considerations
 
-It is beyond the scope of this package to discuss some of pros and cons of using these methods. However, users should be aware of aspects regarding validity and reliability to better interpret results. Likewise, these methods have been validated in very specific populations, therefore professionals evaluating athletes from different countries and etnithities should be cautious when interpreting results. 
+It is beyond the scope of this package to discuss some of pros and cons of using these methods. However, users should be aware of aspects regarding validity and reliability to better interpret results. Likewise, these methods have been validated in very specific populations, therefore professionals evaluating athletes from different countries and ethnicities should be cautious when interpreting results. 
 
 Finally, please ensure accuracy of the athlete's height, weight, sitting height and their parent's height for better results. 
 
