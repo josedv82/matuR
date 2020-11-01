@@ -46,6 +46,24 @@ install.packages("devtools")
 devtools::install_github("josedv82/matuR")
 ```
 
+# Data
+
+### User Data
+
+Use this template for data collection. Ensure that all fields have information. **matuR** runs both (age @ PHV and Khamis-Roche) methods together on the same dataset.
+
+[Data Template](https://github.com/josedv82/matuR/blob/master/man/images/template.xlsx)
+
+### Demo Data
+
+**matuR** provides a demo data sample for users to familiarize with the package. 
+
+```
+library(matuR)
+
+data_sample
+```
+
 # Usage
 
 ### References
