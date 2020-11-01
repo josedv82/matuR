@@ -64,6 +64,8 @@ data_sample
 
 # Usage
 
+### Data Frames:
+
 The two main functions within the package are *`maturation_cm()`* and *`maturation_in()`*. Both functions perform the same calculations and return the same data. Users can choose one or the other one depending on which units they wish to explore the results. The function takes the raw data from the template and performs the Khamis-Roche and Mirwarld calculations returning a dataframe that users can manipulate for further analysis.
 
 ```
@@ -74,6 +76,34 @@ maturation_cm(data_sample)
 
 <img src="man/images/maturation_cm.PNG" width="800" />
 
+### Plots
+
+**matuR** provides a few plotting options:
+
+Predicted Adult Height Plot (note the two options depending on cms or inches)
+
+```
+plot_predicted_height_cm(data_sample)
+plot_predicted_height_in(data_sample)
+
+```
+
+Time to PHV Dumbell Plot
+
+```
+plot_time_phv(data_sample)
+```
+
+Maturity Offset Plot
+
+```
+plot_maturity_offset(data_sample)
+```
+
+Plot the current and predicted height for one athlete against normal growth curves.
+```
+plot_growth_male(data_sample, "Athlete 08")
+```
 
 # References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
