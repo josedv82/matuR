@@ -87,6 +87,7 @@ plot_predicted_height_cm(data_sample)
 plot_predicted_height_in(data_sample)
 
 ```
+<img src="man/images/estimated_adult_height.png" width="800" />
 
 Time to PHV Dumbell Plot
 
