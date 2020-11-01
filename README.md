@@ -87,31 +87,35 @@ plot_predicted_height_cm(data_sample)
 plot_predicted_height_in(data_sample)
 
 ```
-<img src="man/images/estimated_adult_height.png" width="800" />
+<img src="man/images/estimated_adult_height.png" width="600" />
 
 Time to PHV Dumbell Plot
 
 ```
 plot_time_phv(data_sample)
 ```
+<img src="man/images/time_to_phv.png" width="600" />
 
 Maturity Offset Plot
 
 ```
 plot_maturity_offset(data_sample)
 ```
+<img src="man/images/maturity_offset.png" width="600" />
 
 Plot the current and predicted height for one athlete against normal growth curves. The same function is available for females.
 ```
 plot_growth_male(data_sample, "Athlete 08")
 plot_growth_female(data_sample, "Athlete 18")
 ```
+<img src="man/images/plot_growth.png" width="600" />
 
 Plot % of Adult Height highlighted by Maturity Stages
 
 ```
 plot_puberty_stages(data_sample)
 ```
+<img src="man/images/puberty_stages.png" width="600" />
 
 # References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
