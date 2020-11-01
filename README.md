@@ -54,7 +54,7 @@ Use this template for data collection. Ensure that all fields have information. 
 
 #### Demo Data
 
-**{matuR}** provides a demo data sample for users to familiarize with the package. 
+**{matuR}** comes with a sample dataset for users to familiarize with the package. 
 
 ```
 library(matuR)
