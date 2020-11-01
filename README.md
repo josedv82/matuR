@@ -85,7 +85,6 @@ Predicted Adult Height Plot (note the two options depending on cms or inches)
 ```
 plot_predicted_height_cm(data_sample)
 plot_predicted_height_in(data_sample)
-
 ```
 <img src="man/images/estimated_adult_height.png" width="600" />
 
