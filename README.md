@@ -48,7 +48,9 @@ devtools::install_github("josedv82/matuR")
 
 ### User Data
 
-Use this template for data collection. Ensure that all fields have information. **matuR** runs both (age @ PHV and Khamis-Roche) methods together on the same dataset.
+Use this template for data collection. Ensure that all fields have information. Some fields require a double measurement to calculate the average.
+
+**matuR** runs both (age @ PHV and Khamis-Roche) methods together on the same dataset.
 
 [Data Template](https://github.com/josedv82/matuR/blob/master/man/images/template.xlsx)
 
@@ -116,6 +118,13 @@ Plot % of Adult Height highlighted by Maturity Stages
 plot_puberty_stages(data_sample)
 ```
 <img src="man/images/puberty_stages.png" width="600" />
+
+# Considerations
+
+It is beyond the scope of this package to discuss some of pros and cons of using these methods. However, users should be aware of aspects regarding validity and reliability behind these methods. Likewise, these method have been validated in very specific populations, therefore, professionals evaluating athletes from different countries, etnithities should be cautious when interpreting results. 
+
+Finally, please ensure accuracy of the athlete's height, weight, sitting height and their parent's height for better results. 
+
 
 # References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
