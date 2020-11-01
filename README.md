@@ -100,9 +100,16 @@ Maturity Offset Plot
 plot_maturity_offset(data_sample)
 ```
 
-Plot the current and predicted height for one athlete against normal growth curves.
+Plot the current and predicted height for one athlete against normal growth curves. The same function is available for females.
 ```
 plot_growth_male(data_sample, "Athlete 08")
+plot_growth_female(data_sample, "Athlete 18")
+```
+
+Plot % of Adult Height highlighted by Maturity Stages
+
+```
+plot_puberty_stages(data_sample)
 ```
 
 # References
