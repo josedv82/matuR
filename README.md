@@ -124,7 +124,7 @@ Finally, please ensure accuracy of the athlete's height, weight, sitting height 
 
 ## Acknowledgement
 
-I'd like to thank Jorge Arede [https://www.researchgate.net/profile/Jorge_Arede] for his contribution and valuable feedback.
+I'd like to thank [Jorge Arede](https://www.researchgate.net/profile/Jorge_Arede) for his contribution and valuable feedback.
 
 ## References
 The methods behind the calculations implemented as part of the functions in this package rely heavily on the following research:
