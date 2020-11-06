@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_puberty_stages.R
 \name{plot_puberty_stages}
 \alias{plot_puberty_stages}
-\title{\% Adult Height & Puberty States Plot}
+\title{\% Adult Height vs Maturity Offset in Years}
 \usage{
 plot_puberty_stages(data)
 }
@@ -13,7 +13,7 @@ plot_puberty_stages(data)
 A plot \code{(ggplot)}
 }
 \description{
-This function returns a ggplot object showing the \% of adult height for each subject in the dataset. It adds a background color to highlight maturity categories.
+This function returns a scatterplot showing the \% of adult height vs the maturity offset \verb{(in years)}.
 }
 \examples{
 plot_puberty_stages(data_sample)

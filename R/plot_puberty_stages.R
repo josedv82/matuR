@@ -34,12 +34,12 @@ plot_puberty_stages <- function(data) {
    ggplot2::ylab("% Adult Height \n") + ggplot2::xlab("\n Maturity Offset (Years)") +
    ggplot2::ggtitle("\n % Predicted Adult Height", subtitle =  "       Maturity Offset \n") +
    ggplot2::theme_light() +
-   theme(panel.grid = ggplot2::element_blank(),
+   ggplot2::theme(panel.grid = ggplot2::element_blank(),
          panel.border = ggplot2::element_blank(),
          axis.title.x = ggplot2::element_text(color = "grey", hjust = 0.8),
          axis.title.y = ggplot2::element_text(color = "grey", hjust = 0.8),
-         axis.text.y = element_blank(),
-         axis.ticks.y = element_blank(),
+         axis.text.y = ggplot2::element_blank(),
+         axis.ticks.y = ggplot2::element_blank(),
          plot.subtitle = ggplot2::element_text(color = "darkgray"),
          legend.title = ggplot2::element_blank())
 
