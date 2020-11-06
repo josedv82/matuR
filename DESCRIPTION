@@ -11,7 +11,8 @@ Imports:
     ggplot2,
     lubridate,
     tidyr,
-    magrittr
+    magrittr,
+    ggrepel
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 

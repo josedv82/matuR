@@ -1,6 +1,6 @@
-#' % Adult Height & Puberty States Plot
+#' % Adult Height vs Maturity Offset in Years
 #'
-#' This function returns a ggplot object showing the % of adult height for each subject in the dataset. It adds a background color to highlight maturity categories.
+#' This function returns a scatterplot showing the % of adult height vs the maturity offset `(in years)`.
 #'
 #' @param data A data frame. The object containing the raw data we wish to analize.
 #' @return A plot `(ggplot)`
@@ -12,28 +12,37 @@
 
 plot_puberty_stages <- function(data) {
 
-  df<-data.frame(xmin=c(-Inf, 85, 90, 95),
-                 xmax=c(85, 90, 95, Inf),
-                 ymin=c(-Inf,-Inf, -Inf, -Inf),
-                 ymax=c(Inf,Inf, Inf, Inf),
-                 Stages=c("4. Pre","3. Early", "2. Mid", "1. Late"))
+ plot <- maturation_cm(data) %>%
+   ggplot2::ggplot(ggplot2::aes(x = `Maturity Offset (years)`, y = `% Adult Height`, label = Athlete)) +
+   ggplot2::annotate("rect", xmin = -Inf, xmax = 4.5, ymin = 100, ymax = 102, fill = "black") +
+   ggplot2::annotate("rect", xmin = -Inf, xmax = 4.5, ymin = -Inf, ymax = 88, fill = "gray", alpha = 0.4) +
+   ggplot2::annotate("rect", xmin = -Inf, xmax = 4.5, ymin = 88, ymax = 95, fill = "gray", alpha = 0.6) +
+   ggplot2::annotate("rect", xmin = -Inf, xmax = 4.5, ymin = 95, ymax = 100, fill = "gray", alpha = 0.8) +
+   ggplot2::annotate("rect", xmin = 4.5, xmax = Inf, ymin = -Inf, ymax = Inf, fill = "white") +
+   ggplot2::annotate("text", x = 0, y = 101, label = "Growth Spurt", size = 3, color = "white") +
+   ggplot2::annotate("text", x = -2.7, y = 101, label = "Pre-Puberty", size = 3, color = "white") +
+   ggplot2::annotate("text", x = 2.7, y = 101, label = "Post-Puberty", size = 3, color = "white") +
+   ggplot2::annotate("text", x = -4, y = 85, label = "< 88%", size = 3, color = "black") +
+   ggplot2::annotate("text", x = -4, y = 91.5, label = "88-95%", size = 3, color = "black") +
+   ggplot2::annotate("text", x = -4, y = 97.5, label = "> 95%", size = 3, color = "black") +
+   ggplot2::geom_vline(xintercept = -1, color = "white") +
+   ggplot2::geom_vline(xintercept = 1, color = "white") +
+   ggrepel::geom_text_repel(nudge_x = 6, direction = "y", angle = 0, hjust = -1, segment.size = 0.01, point.padding = 1, segment.alpha = 0.1, size = 3, color = "black") +
+   ggplot2::geom_point(size = 2.5, alpha = 0.5, color = "red", shape = 21) +
+   ggplot2::ylim (83, 102) +
+   ggplot2::scale_x_continuous(limits = c(-4,5.5), breaks = seq(-4, 4, by = 1)) +
+   ggplot2::ylab("% Adult Height \n") + ggplot2::xlab("\n Maturity Offset (Years)") +
+   ggplot2::ggtitle("\n % Predicted Adult Height", subtitle =  "       Maturity Offset \n") +
+   ggplot2::theme_light() +
+   theme(panel.grid = ggplot2::element_blank(),
+         panel.border = ggplot2::element_blank(),
+         axis.title.x = ggplot2::element_text(color = "grey", hjust = 0.8),
+         axis.title.y = ggplot2::element_text(color = "grey", hjust = 0.8),
+         axis.text.y = element_blank(),
+         axis.ticks.y = element_blank(),
+         plot.subtitle = ggplot2::element_text(color = "darkgray"),
+         legend.title = ggplot2::element_blank())
 
-  plot <- maturation_cm(data) %>%
-    ggplot2::ggplot(ggplot2::aes(x = `% Adult Height`, y = reorder(Athlete, `% Adult Height`), label = `% Adult Height`)) +
-    ggplot2::geom_rect(data=df, ggplot2::aes(xmin=xmin,ymin=ymin,xmax=xmax,ymax=ymax,fill=Stages), alpha = 0.5, inherit.aes=FALSE) +
-    ggplot2::geom_point(size = 2) +
-    ggplot2::scale_x_continuous(breaks = seq(0, 100, by = 2.5)) +
-    ggplot2::scale_fill_manual(values=c("4. Pre" = "#eacab9", "1. Late" = "#83aeae", "2. Mid" = "#a8d8bd", "3. Early" = "#f9f0cb")) +
-    ggplot2::ylab("Athletes \n") + ggplot2::xlab("\n % of Adult Height") +
-    ggplot2::ggtitle("\n % Predicted Adult Height", subtitle =  "       Puberty Stages \n") +
-    ggplot2::theme_light() +
-    ggplot2::theme(axis.title.x = ggplot2::element_text(color = "grey", hjust = 1),
-          axis.title.y = ggplot2::element_text(color = "grey", hjust = 1),
-          plot.subtitle = ggplot2::element_text(color = "darkgray"),
-          panel.grid.minor = ggplot2::element_blank(),
-          panel.grid.major = ggplot2::element_line(linetype = 2),
-          legend.title = ggplot2::element_blank())
-
-  plot
+ plot
 
 }
