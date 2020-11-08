@@ -4,7 +4,7 @@
 <img src="man/images/matur_logo.PNG" align="right" width="300" />
 
 ## Intro
-Accounting for maturation stages in young athletes is paramount for talent identification. The concept of [biobanding,](https://www.collinsdictionary.com/es/diccionario/ingles/biobanding) or grouping of athletes based on their biological development as opposed to their chronological age, has also been widely researched to enable comparison of physical attributes across young athletes as well as better adjustment of the training and competition demands athletes are exposed to. 
+Maturity profiling in young athletes is paramount for talent identification. The concept of [biobanding,](https://www.collinsdictionary.com/es/diccionario/ingles/biobanding) or grouping of athletes based on their biological development as opposed to their chronological age, has also been widely researched to enable comparison of physical attributes across young athletes as well as better adjustment of the training and competition demands athletes are exposed to. 
   
 The goal of this repository is to showcase **{matuR}**, a package that provides a simple framework for professionals working with young athletes to calculate and visualize common maturation metrics using not invasive methods. The two methods implemented are:
 
