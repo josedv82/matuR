@@ -41,7 +41,7 @@ For further details about these two methods, their protocols and calculations se
 install.packages("matuR")
 
   
-#Install the development version from GitHub**  
+#Install the development version from GitHub  
 install.packages("devtools")
 devtools::install_github("josedv82/matuR")
 ```
