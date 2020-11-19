@@ -33,7 +33,7 @@ For further details about these two methods, their protocols and calculations se
 
 Install from CRAN**  
 ```
-{matuR} has not been submitted to CRAN yet. Please use the development version.
+install.packages("matuR")
 ```
   
 Install the development version from GitHub**  
