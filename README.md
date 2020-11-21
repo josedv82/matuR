@@ -1,7 +1,6 @@
 ![](https://www.r-pkg.org/badges/version/matuR)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/matuR)
 [![](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![HitCount](http://hits.dwyl.com/josedv82/matuR.svg)](http://hits.dwyl.com/josedv82/matuR)
 
 # {matuR}
 ### Athlete Maturation and Biobanding
