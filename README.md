@@ -1,3 +1,5 @@
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://www.r-pkg.org/badges/version/matuR)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/matuR)
 [![](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
